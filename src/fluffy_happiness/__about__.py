@@ -3,7 +3,7 @@ __all__ = [
     "__email__",
 ]
 
-__title__ = "special_package"
+__title__ = "fluffy_happiness"
 __summary__ = "Deployment example package"
 __uri__ = ""
 
