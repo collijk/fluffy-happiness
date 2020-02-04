@@ -5,4 +5,12 @@ install:
 - pip install .
 script:
 - pytest -v
-
+deploy:
+  provider: pypi
+  on:
+    distributions: sdist bdist_wheel
+    repo: collijk/fluffy-happiness
+    tags: true
+  user: collijk
+  password:
+    secure: bIBLDtOErOjk/0699Dph66NyqtVr03SKYDKQR/MKrquLg0QGsbVdIWiVX8X04SAj56hMRHrnLdr7wZ5GDG4BYSvvnaDKOG/OEjr/6Hd/P6kDtvWHD4kUJLDjEsGG4URk1SyBcSFmideykpVVtij7vJWbdkHn6hurAWdRKv0NbwaeUHSANIRq/j5Ce8PenAme9gdQURSFQfeXMghNI/9/kXlgmJ+uE+OtXXw01tbjeJCMFylKAqOQ77dWkzZ6JXn/ua19S3dmRnfVYszg+BtuON73OfNAJ2/eIeSKzFzE7exX2rANXHS+yTz9luFLTS5IFR7CgLwqk/vPLzn320fHdHc5FZKfZ+DwdJnkhmSOcMuqAuvrCUlDzSC0NCk9BLKvhG2UDl7U1VT5oNhYGA8tlC/8YSi0aCOjsYZakt/dgQripx++UWLixMubmm7P/PQFfZpFQ5eLziutyKRtsClCti125gzX/p9QFomGna5fxWZETH/lZMAZZs6sc+PqF1NnypJV4o3fE4K/SLFLAol6080Kmfl5cuqUH8Fg7fDq9Dvx+0gDcW4DdpTIwo7IC3jxn2Acd0nmb50PNqoCUD0C7gb6mhI6r/nOOgSFHmgexuj5U7XjF6M2qv/V/Y0ep2CIRkDkSoCiykTvetMdmMdZhYHcK8IBRmhhlJVT3u7Tzvw=
